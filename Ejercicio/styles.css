@@ -1,0 +1,118 @@
+
+
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --dark: #232830;
+    --very-light-pink: #c7c7c7;
+    --text-input-field: #f7f7f7;
+    --hospital-green: #acd9b2;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+  }
+  body {
+    margin: 0;
+    font-family: "Quicksand", sans-serif;
+  }
+  .container-grid {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100vh;
+    /* min-width: 400px; */
+    overflow-x: hidden;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* height: 320px; */
+    height: 800px;
+    box-sizing: border-box;
+    width: 320px;
+    
+  }
+
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 260px;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 12px;
+  }
+  .input-container h1 {
+    font-size: var(--lg);
+    margin: 0;
+    text-align: center;
+  }
+
+  h2,
+  th,
+  td {
+    font-size: var(--md);
+    text-align: center;
+  }
+  .input-container form {
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    height: 64px;
+    width: 140px;
+    grid-template-rows: auto auto;
+  }
+  .input-container form label {
+    font-size: var(--md);
+  }
+
+  .input-container form input {
+    border: 1px black;
+    border-radius: 8px;
+    width: 120px;
+    height: 20px;
+    /* margin: 8px 0 8px 0; */
+    align-self: center;
+    box-shadow: 0px 0px 8px 1px;
+  }
+  .input-container button {
+    width: 120px;
+    background-color: #dca629;
+    border: none;
+    border-radius: 8px;
+    height: 30px;
+    color: var(--dark);
+    font-weight: bold;
+    padding: 0;
+    
+  }
+
+  .input-container button:hover {
+    background-color: #cebb2f;
+    cursor: pointer;
+  }
+
+  .table-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button-container {
+    display: flex;
+    align-items: center;
+    width:300px;
+    justify-content: center;
+    gap: 8px;
+
+
+  }
+
+  @media (max-width: 320px) {
+    .container{
+      width: 200px;
+    }
+  }
